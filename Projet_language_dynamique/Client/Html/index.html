@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+  <div class=conteneur_graphe id="logo">
+    <img src="logo_twitter.svg">
+    <h1 >Search Tweet</h1>
+    <br>
+  </div>
+    <br>
+    <br>
+
+  <br clear="all">
+  <br>
+  <div class=conteneur_graphe >
+    <h1>Recherche tes tweets</h1>
+    <h5>Les balises poss&eacute;dant une &eacute;toile sont facultative &agrave; remplir (si jamais tu as un doute elles le sont toutes)</h5>
+    <label for="autocomplete">Mots que tu veux rechercher dans les tweets :&#9734;</label>
+    <input type="text" id="searchWord" list="reccomended_word">
+    <datalist id="reccomended_word"></datalist>
+
+    <br>
+    <label for="date_start">Date : de &#9734;</label>
+    <input type="date" id="date_start">
+    <label for="date_end">&agrave; &#9734;</label>
+    <input type="date" id="date_end">
+
+    <br>
+    <h4>Si tu veux d'autre pays cliques sur le bouton autre</h4>
+    <button id="other_country">Autre</button>
+    <br>
+    <br>
+    <div id="liste_val_country">
+      <div id="valcountry0">
+        <label for="autocomplete">Pays&#9734;</label>
+        <input  list="contry_list">
+        <datalist id="contry_list"></datalist>  
+      </div>
+    </div>
+
+    <br>
+    <button id="searchButton">Search</button>
+    <br>
+    <br>
+
+    <div id="searchResults">
+    </div>
+    <div class="button_choice">
+      <button id="button_button_graphe">
+        <div id="button_graphe">
+          <h1>Histogramme</h1>
+        </div>  
+      </button>
+      <button id="button_button_map">
+
+        <div id="button_map">
+          <h1>Carte</h1>
+
+        </div>
+      </button>
+
+
+    </div>
+
+
+  </div>
+
+    <div style="position: relative;" id="display_map">
+      <h1>Carte !</h1>
+      <p></p>
+  
+        <div id="conteneur_map" >
+            <img src="world_map.png" id="ima_map">
+            <div id="conteneur_dot">
+
+
+            </div>
+      </div>
+    </div>
+
+
+
+<div id="display_histograme">
+
+
+    <div class=conteneur_graphe id="container_graphe_tweet_by_country">
+      <h1 >Tweets par pays</h1>
+      <div class="graphe" id="graphe_tweet_by_country">
+        <div class=column>
+
+          <h3>Nombre de Tweets <i class="arrow right"></i></h3>
+          <h3 id="Tweet_Total">Tweets total: </h3>
+          <div class="espace"></div>
+          <h3>nom des pays <i class="arrow right"></i></h3>
+        </div>
+
+
+    
+      </div>
+    
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" src="principale.js"></script>
+  <script type="text/javascript" src="requetes.js"></script>
+  <script type="text/javascript" src="graph.js"></script>
+  <script type="text/javascript" src="map.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,121 @@
+/*logo*/
+#logo{
+    font: italic 1.2em "Fira Sans", serif;
+    height:200px;
+}
+
+#logo>img{
+    width:200px;
+    height:200px;
+}
+
+
+
+
+/*button*/
+.button_choice{
+    display: flex;
+    justify-content: center;
+
+
+}
+.button_choice>h1{
+	text-align: center;
+	font-size: 2.5em;
+    line-height:20px;
+
+}
+#button_graphe{
+    background: url("hist1.png") center;
+    display:block;
+    width:400px;
+    height:200px;
+    background-position:50% 50%;
+    text-align: center;
+}
+#button_map{
+    background: url("mini_map.png") center;
+    display:block;
+    width:400px;
+    height:200px;
+    background-position:50% 50%;
+    text-align: center;
+}
+
+/*map*/
+#conteneur_map {
+    position: relative;
+    /*border: 2px dashed black;*/
+    z-index:1;
+    width:1150px;
+    height:800px;
+    float: left;
+}
+
+#ima_map {
+    height: 100%;
+    max-width: 100%;
+}
+
+.map_point {
+    position: absolute;
+    background-color: rgb(58, 14, 177);
+    border-radius: 50%;
+    line-height: 10px;
+    font-size: 70%;
+    text-align: center;
+    color: white;
+    /*border: 2px dashed black;*/
+}
+
+#graphe_map{
+    height: 100%;
+    max-width: 100%;
+}
+
+/*Graph*/
+
+
+.conteneur_graphe{
+    text-align: center;
+
+}
+.graphe{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -10px;
+
+}
+.espace{
+    height: 369px;
+    width : 20px;
+
+}
+.column>canvas{
+    border: solid;
+    contain: content;
+    height: 400px;
+    width : 20px;
+}
+#canvastitle{
+    border: none;
+}
+
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
