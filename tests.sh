@@ -1,10 +1,10 @@
 echo 'Lancement serveur'
 
-. ../../../virtualenv/bin/activate
+. ./virtualenv/bin/activate
 
-cd ../../../Projet_language_dynamique/Serveur_BA/Serveur/
+cd Projet_language_dynamique/Serveur_BA/Serveur/
 python3 server.py 8000&
-cd ../../../aide/installation/64bit/
+cd ../../../
 
 CMDPID=$!
 

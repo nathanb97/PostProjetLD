@@ -4,6 +4,7 @@ Pour lancer les installations:
 2°)executez la commande suivante : chmod a+x install.sh tests.sh
 
 Pour le lancement des test nous avons besoin de Mozilla déjà installé et de firefox webdriver
+Il faut avoir le port 8000 libre 
 
 Selon votre architecture d'ordinateur 32 bits ou 64 bits veuillez deplacer geckodriver dans PostProjetLD.
 Pour cela:
